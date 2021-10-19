@@ -43,18 +43,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: relative;;
 }
 
 .post-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-top: 2em;
+  margin: 2em 0 0.2em 0;
 }
 
-.post-header h2 {
-  margin: 0;
+.post-sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.post-sub-header time {
+  white-space: nowrap;
 }
 
 .dark-mode i,
@@ -149,6 +152,8 @@ body {
 .tags {
   display: flex;
   gap: 0.4em;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .tag {
