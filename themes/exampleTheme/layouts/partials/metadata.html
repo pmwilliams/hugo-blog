@@ -1,0 +1,20 @@
+<div class="post-header">
+  <div>
+    <h2>
+      <a class="post-title" href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
+    </h2>
+    {{ $dateTime := .PublishDate.Format "2006-01-02" }}
+    {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+    <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+  </div>
+  <div class="tags">
+    {{ with .Params.tags }}
+    {{ range . }}
+    {{ $href := print (absURL "tags/") (urlize .) }}
+    <a class="tag" href="{{ $href }}">{{ . }}</a>
+    {{ end }}
+    {{ end }}
+  </div>
+</div>

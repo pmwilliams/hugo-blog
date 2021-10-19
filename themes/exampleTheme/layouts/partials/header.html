@@ -1,0 +1,36 @@
+<div class="header">
+  <h1 class="title">{{ .Site.Title }}</h1>
+  <a class="dark-mode" href="#" onClick="onThemeClick(event)">
+    <i class="material-icons-outlined">dark_mode</i>
+  </a>
+  <a class="light-mode" href="#" onClick="onThemeClick(event)">
+    <i class="material-icons-outlined">light_mode</i>
+  </a>  
+  <div class="theme-menu">
+    <ul>
+      <a href="#" onClick="onDarkThemeClick(event)">
+        <li class="dark-theme-menu-item"><i class="material-icons">check</i>Dark theme</li>
+      </a>
+      <a href="#" onClick="onLightThemeClick(event)">
+        <li class="light-theme-menu-item"><i class="material-icons">check</i>Light theme</li>
+      </a>
+      <a href="#" onClick="onDefaultThemeClick(event)">
+        <li class="default-theme-menu-item"><i class="material-icons">check</i>System default</li>
+      </a>
+    </ul>
+  </div>
+</div>
+<div id="nav-border">
+  <nav id="nav">
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}">
+      {{ if .Pre }}
+      {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
+      {{ $icon }}
+      {{ end }}
+      {{ $text := print .Name | safeHTML }}
+      {{ $text }}
+      </a>
+      {{ end }}
+  </nav>
+</div>
