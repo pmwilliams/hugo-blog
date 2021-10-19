@@ -1,7 +1,7 @@
 baseURL = 'https://pmwilliams.github.io/hugo-blog'
 languageCode = 'en-uk'
 title = 'unscripted'
-theme = "exampleTheme"
+theme = "unscriptedTheme"
 
 [menu]
   [[menu.main]]
