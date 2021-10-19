@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://pmwilliams.github.io/hugo-blog'
 languageCode = 'en-uk'
 title = 'unscripted'
 theme = "exampleTheme"

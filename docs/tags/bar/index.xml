@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bar on unscripted</title>
-    <link>http://example.org/tags/bar/</link>
+    <link>https://pmwilliams.github.io/hugo-blog/tags/bar/</link>
     <description>Recent content in bar on unscripted</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Sun, 26 Jan 2020 23:11:13 +0000</lastBuildDate><atom:link href="http://example.org/tags/bar/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jan 2020 23:11:13 +0000</lastBuildDate><atom:link href="https://pmwilliams.github.io/hugo-blog/tags/bar/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>http://example.org/posts/my-first-post/</link>
+      <link>https://pmwilliams.github.io/hugo-blog/posts/my-first-post/</link>
       <pubDate>Sun, 26 Jan 2020 23:11:13 +0000</pubDate>
       
-      <guid>http://example.org/posts/my-first-post/</guid>
+      <guid>https://pmwilliams.github.io/hugo-blog/posts/my-first-post/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor
 aliquam nulla facilisi cras fermentum odio. A erat nam at lectus urna duis.
@@ -25,10 +25,10 @@ semper risus in hendrerit gravida rutrum.&lt;/p&gt;</description>
     
     <item>
       <title>My Second Post</title>
-      <link>http://example.org/posts/my-second-post/</link>
+      <link>https://pmwilliams.github.io/hugo-blog/posts/my-second-post/</link>
       <pubDate>Sun, 26 Jan 2020 23:11:13 +0000</pubDate>
       
-      <guid>http://example.org/posts/my-second-post/</guid>
+      <guid>https://pmwilliams.github.io/hugo-blog/posts/my-second-post/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor
 aliquam nulla facilisi cras fermentum odio. A erat nam at lectus urna duis.

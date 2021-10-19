@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/tags/bar/</loc>
+    <loc>https://pmwilliams.github.io/hugo-blog/tags/bar/</loc>
     <lastmod>2020-01-26T23:11:13+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/car/</loc>
+    <loc>https://pmwilliams.github.io/hugo-blog/tags/car/</loc>
     <lastmod>2020-01-26T23:11:13+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/cheese/</loc>
+    <loc>https://pmwilliams.github.io/hugo-blog/tags/cheese/</loc>
     <lastmod>2020-01-26T23:11:13+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/foo/</loc>
+    <loc>https://pmwilliams.github.io/hugo-blog/tags/foo/</loc>
     <lastmod>2020-01-26T23:11:13+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/henry/</loc>
+    <loc>https://pmwilliams.github.io/hugo-blog/tags/henry/</loc>
     <lastmod>2020-01-26T23:11:13+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/my-first-post/</loc>
+    <loc>https://pmwilliams.github.io/hugo-blog/posts/my-first-post/</loc>
     <lastmod>2020-01-26T23:11:13+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/my-second-post/</loc>
+    <loc>https://pmwilliams.github.io/hugo-blog/posts/my-second-post/</loc>
     <lastmod>2020-01-26T23:11:13+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/my-third-post/</loc>
+    <loc>https://pmwilliams.github.io/hugo-blog/posts/my-third-post/</loc>
     <lastmod>2020-01-26T23:11:13+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/</loc>
+    <loc>https://pmwilliams.github.io/hugo-blog/posts/</loc>
     <lastmod>2020-01-26T23:11:13+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/spoon/</loc>
+    <loc>https://pmwilliams.github.io/hugo-blog/tags/spoon/</loc>
     <lastmod>2020-01-26T23:11:13+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://pmwilliams.github.io/hugo-blog/tags/</loc>
     <lastmod>2020-01-26T23:11:13+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>https://pmwilliams.github.io/hugo-blog/</loc>
     <lastmod>2020-01-26T23:11:13+00:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://pmwilliams.github.io/hugo-blog/categories/</loc>
   </url>
 </urlset>
