@@ -74,7 +74,7 @@ function onLoad() {
 window.addEventListener('load', onLoad);
 
 const theme = window.localStorage.getItem('theme') 
-if (theme !== 'undefined') {
+if ([DARK, LIGHT].includes(theme)) {
   document.documentElement.classList.add(theme);
   setThemeSelection(theme);
 } else {
