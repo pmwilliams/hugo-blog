@@ -1,10 +1,10 @@
-<div class="post-header">
+<h2 class="post-header">
+  <a class="post-title" href="{{ .RelPermalink }}">
+    {{ .Title }}
+  </a>
+</h2>
+<div class="post-sub-header">
   <div>
-    <h2>
-      <a class="post-title" href="{{ .RelPermalink }}">
-        {{ .Title }}
-      </a>
-    </h2>
     {{ $dateTime := .PublishDate.Format "2006-01-02" }}
     {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
     <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
