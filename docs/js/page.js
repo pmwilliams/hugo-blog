@@ -59,10 +59,10 @@ function onDefaultThemeClick(event) {
 }
 
 function setDefaultTheme() {
-  if (window.matchMedia('prefers-color-scheme: dark')) {
+  if (window.matchMedia('prefers-color-scheme: dark').matches) {
     setTheme(DARK);
   }
-  if (window.matchMedia('prefers-color-scheme: light')) {
+  if (window.matchMedia('prefers-color-scheme: light').matches) {
     setTheme(LIGHT);
   }
 }
