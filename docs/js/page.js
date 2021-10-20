@@ -52,7 +52,7 @@ function onLightThemeClick(event) {
 
 function onDefaultThemeClick(event) {
   setThemeSelection(DEFAULT);
-  window.localStorage.setItem('theme', undefined);
+  window.localStorage.removeItem('theme');
   setDefaultTheme();
   closeThemeMenu();
   event.preventDefault();
@@ -73,7 +73,7 @@ function onLoad() {
 window.addEventListener('load', onLoad);
 
 const theme = window.localStorage.getItem('theme') 
-if (theme !== 'undefined') {
+if (theme) {
   document.documentElement.classList.add(theme);
   setThemeSelection(theme);
 } else {
