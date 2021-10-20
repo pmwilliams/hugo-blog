@@ -2,12 +2,7 @@
 <div>
   {{ range first 10 .Site.RegularPages }}
     {{ partial "metadata.html" . }}
-    <p class="summary">
-      {{ .Summary }}
-    </p>
-    <a class="read-more" href="{{ .RelPermalink }}">
-      Read more
-    </a>
+    {{ partial "summary.html" . }}
   {{ end }}
 </div>
 {{ end }}

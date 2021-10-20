@@ -27,6 +27,11 @@
   max-width: 800px;
   background-color: var(--background);
   color: var(--on-background);
+  transition: color 500ms, background-color 500ms, border 500ms;
+}
+
+.no-transitions, .no-transitions * {
+  transition: none !important;
 }
 
 a {
@@ -50,6 +55,47 @@ body {
   margin-bottom: 1em;
 }
 
+.theme-toggle {
+  position: relative;
+  border: 1px solid var(--on-background);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 3px;
+  height: 23px;
+  max-width: 56px;
+  cursor: pointer;
+}
+
+.theme-toggle:after {
+  content: ' ';
+  position: absolute;
+  border: 2px solid var(--background);
+  border-radius: 50%;
+  height: calc(100% - 8px);
+  aspect-ratio: 1;
+  top: 2px;
+  left: 2px;
+  background-color: var(--primary);
+}
+
+.theme-toggle.transition:after {
+  transition: left 500ms, border 500ms;
+}
+
+.theme-toggle:hover:after {
+  background-color: var(--primary-hover);
+}
+
+.dark .theme-toggle:after {
+  left: calc(100% - 26px);
+}
+
+.theme-toggle i {
+  font-size: 20px;
+}
+
 .post-header {
   margin: 0 0 0.2em 0;
 }
@@ -63,67 +109,6 @@ body {
 .post-sub-header time {
   white-space: nowrap;
   font-size: 1.2em;
-}
-
-.dark-mode i,
-.light-mode i {
-  vertical-align: bottom;
-  padding-top: 7px;
-}
-
-.header .light-mode {
-  display: none;
-}
-
-.dark .header .light-mode {
-  display: inline;
-}
-
-.dark .dark-mode {
-  display: none;
-}
-
-.theme-menu {
-  position: absolute;
-  right: 0;
-  background: var(--menu-background);
-  border-radius: 5px;
-}
-
-.theme-menu:not(.show) {
-  visibility: hidden;
-}
-
-.theme-menu ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.theme-menu li:hover {
-  background-color: var(--menu-hover);
-}
-
-.theme-menu li {
-  padding: 0.7em;
-}
-
-.theme-menu li i {
-  font-size: 1.2em;
-  vertical-align: middle;
-  padding-right: 0.5em;
-}
-
-.theme-menu:not(.dark-selected) li.dark-theme-menu-item i {
-  visibility: hidden;
-}
-
-.theme-menu:not(.light-selected) li.light-theme-menu-item i {
-  visibility: hidden;
-}
-
-.theme-menu:not(.default-selected) li.default-theme-menu-item i {
-  visibility: hidden;
 }
 
 #nav-border {
