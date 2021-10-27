@@ -11,6 +11,8 @@ function setTheme(theme) {
   document.documentElement.classList.remove(DARK);
   document.documentElement.classList.remove(LIGHT);
   document.documentElement.classList.add(theme);
+  const themeToggle = document.querySelector('.theme-toggle')
+  themeToggle.setAttribute('aria-checked', theme === DARK);
 }
 
 function onThemeToggle() {
@@ -24,8 +26,16 @@ function onThemeToggle() {
 
 function onLoad() {
   document.documentElement.classList.remove('no-transitions');
-  document.querySelector('.theme-toggle').addEventListener('click', onThemeToggle);
-  document.querySelector('.theme-toggle').classList.add('transition');
+  const themeToggle = document.querySelector('.theme-toggle')
+  themeToggle.classList.add('transition');
+  themeToggle.addEventListener('click', onThemeToggle);
+  themeToggle.addEventListener('keydown', (event) => {
+    if (event.code !== 'Space') {
+      return;
+    }
+    onThemeToggle();
+    event.preventDefault();
+  });
 }
 
 window.addEventListener('load', onLoad);

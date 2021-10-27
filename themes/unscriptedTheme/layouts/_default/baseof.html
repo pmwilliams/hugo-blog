@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
+        <main>
+            {{- block "main" . }}{{- end }}
+        </main>
     </body>
     <script src="{{.Site.BaseURL}}/js/page.js"></script>
 </html>

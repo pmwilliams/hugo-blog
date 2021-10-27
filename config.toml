@@ -3,6 +3,9 @@ languageCode = 'en-uk'
 title = 'unscripted'
 theme = "unscriptedTheme"
 
+[params]
+Description = "Paul Williams personal blog"
+
 [menu]
   [[menu.main]]
     name = "Home"

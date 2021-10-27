@@ -4,9 +4,9 @@
   --border: #888888;
   --menu-background: #eeeeee;
   --menu-hover: #cccccc;
-  --primary: #1e88e5;
+  --primary: #3f51b5;
   --on-primary: white;
-  --primary-hover: #187bd2;
+  --primary-hover: #002984;
 }
 
 :root.dark {
@@ -44,21 +44,17 @@ body {
   margin: 0;
 }
 
-.header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-}
-
-.header {
   margin-bottom: 1em;
 }
 
 .theme-toggle {
   position: relative;
   border: 1px solid var(--on-background);
-  border-radius: 20px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -72,7 +68,6 @@ body {
   content: ' ';
   position: absolute;
   border: 2px solid var(--background);
-  border-radius: 50%;
   height: calc(100% - 8px);
   aspect-ratio: 1;
   top: 2px;

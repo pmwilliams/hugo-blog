@@ -1,20 +1,20 @@
-<div class="header">
+<header>
   <h1 class="title">{{ .Site.Title }}</h1>
-  <div class="theme-toggle">
+  <div class="theme-toggle" tabindex="0" aria-label="Dark mode" role="switch" aria-checked="true">
     <i class="material-icons-outlined">dark_mode</i>
     <i class="material-icons-outlined">light_mode</i>  
   </div>
-</div>
+</header>
 <div id="nav-border">
   <nav id="nav">
       {{ range .Site.Menus.main }}
       <a href="{{ .URL }}">
-      {{ if .Pre }}
-      {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
-      {{ $icon }}
-      {{ end }}
-      {{ $text := print .Name | safeHTML }}
-      {{ $text }}
+        {{ if .Pre }}
+        {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
+        {{ $icon }}
+        {{ end }}
+        {{ $text := print .Name | safeHTML }}
+        {{ $text }}
       </a>
       {{ end }}
   </nav>

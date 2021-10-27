@@ -1,8 +1,6 @@
 {{ define "main" }}
-<div>
-  {{ range first 10 .Site.RegularPages }}
-    {{ partial "metadata.html" . }}
-    {{ partial "summary.html" . }}
-  {{ end }}
-</div>
+{{ range first 10 .Site.RegularPages }}
+  {{ partial "metadata.html" . }}
+  {{ partial "summary.html" . }}
+{{ end }}
 {{ end }}
